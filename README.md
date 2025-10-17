@@ -1,2 +1,2 @@
-## This is network security project for pishing data 
+## This is network security project for phising data 
 ### Learning purposes 
