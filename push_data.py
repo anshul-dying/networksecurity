@@ -13,6 +13,7 @@ ca = certifi.where()
 import pandas as pd
 import numpy as np
 import pymongo
+
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
 
@@ -56,5 +57,5 @@ if __name__ == "__main__":
     
     records = obj.csv_to_json_converter(FILE_PATH)
 
-    no_records = obj.insert_data_to_mongodb(records, DATABASE, COLLECTION)
-    print(no_records)
+    num_records = obj.insert_data_to_mongodb(records, DATABASE, COLLECTION)
+    print(num_records)
